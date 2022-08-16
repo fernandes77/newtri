@@ -1,0 +1,15 @@
+import { ComponentStory, ComponentMeta } from '@storybook/react'
+import { {{pascalCase name}} } from '.'
+
+export default {
+  title: 'Components/{{pascalCase name}}',
+  component: {{pascalCase name}},
+  parameters: {
+    layout: 'fullscreen'
+  }
+} as ComponentMeta<typeof {{pascalCase name}}>
+
+const Template: ComponentStory<typeof {{pascalCase name}}> = () => <{{pascalCase name}} />
+
+export const Primary = Template.bind({})
+Primary.args = {}
